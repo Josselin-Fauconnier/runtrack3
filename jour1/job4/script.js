@@ -9,19 +9,14 @@ function Depuis1992() {
   const liste = document.getElementById("anneebissex");
 
   for (let annee = 1992; annee <= anneeActuelle; annee++) {
-    const li = document.createElement("li");
-
     if (bissextile(annee)) {
+      const li = document.createElement("li");
       li.textContent = `${annee} : bissextile`;
       li.style.color = "purple";
-    } else {
-      li.textContent = `${annee} : non bissextile`;
-    }
-
-    liste.appendChild(li);
+      liste.appendChild(li);
+    } 
   }
 }
-
 
 Depuis1992();
 
