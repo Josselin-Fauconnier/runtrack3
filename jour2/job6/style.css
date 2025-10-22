@@ -1,0 +1,71 @@
+
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333333;
+}
+
+
+body.plateforme-theme {
+    background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+
+body.plateforme-theme {
+    background: #0066cc; 
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+
+body.plateforme-theme::before {
+    content: "La Plateforme_ - Code Konami activé !";
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: #0066cc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #0066cc;
+    box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+    animation: slideIn 0.5s ease-out;
+    font-weight: bold;
+}
+
+
+body.plateforme-theme h1,
+body.plateforme-theme h2,
+body.plateforme-theme h3 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+body.plateforme-theme {
+    background: 
+        linear-gradient(45deg, #0066cc 25%, transparent 25%),
+        linear-gradient(-45deg, #0066cc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, white 75%),
+        linear-gradient(-45deg, transparent 75%, white 75%);
+    background-size: 60px 60px;
+    background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+    background-color: #0066cc;
+}
