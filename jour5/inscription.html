@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>inscription renforcée</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="form-conteneur">
+        <p>Inscription</p>
+        <form id="form-inscription">
+            <div class="form-groupe">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required maxlength="50" >
+                <div class="erreur-message" id="nom-erreur"></div>
+            </div>
+
+            <div class="form-groupe">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required maxlength="50" >
+                <div class="erreur-message" id="prenom-erreur"></div>
+            </div>
+
+            <div class="form-groupe">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required maxlength="100" >
+                <div class="erreur-message" id="email-erreur"></div>
+            </div>
+
+            <div class="form-groupe">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required maxlength="60" >
+                <div class="erreur-message" id="password-erreur"></div>
+            </div>
+
+            <div class="form-groupe">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" placeholder="Ex: 28 avenue banane" name="adresse" required maxlength="200">
+                <div class="erreur-message" id="adresse-erreur"></div>
+            </div>
+
+            <div class="form-groupe">
+                <label for="codepostal">Code postal :</label>
+                <input  type="text"  placeholder="Ex:92140" id="codepostal" name="codepostal" required maxlength="5" pattern="[0-9]{5}" >
+                <div class="erreur-message" id="codepostal-erreur"></div>
+            </div>
+
+            <button type="submit" id="bouton-inscription" disabled>S'inscrire</button>
+        </form>
+    </div>
+        
+
+
+        <script src="inscription.js"></script>
+    </body>
+    </html>

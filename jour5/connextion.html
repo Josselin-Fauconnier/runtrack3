@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>module de connextion renforcé</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+         <div class="form-conteneur">
+        <p>Connexion</p>
+        <form id="form-log">
+            <div class="form-groupe">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <div class="erreur-message" id="email-erreur"></div>
+            </div>
+
+            <div class="form-groupe">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password">
+                <div class="erreur-message" id="password-erreur"></div>
+            </div>
+
+            <button type="submit" id="bouton" disabled>Se connecter</button>
+        </form>
+    </div>
+        
+        <script src="connex.js" ></script>
+        
+
+    </body>
+    </html>
