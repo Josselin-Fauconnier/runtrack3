@@ -1,9 +1,9 @@
 
-// Version simplifiée pour exercice - Junior Developer
+
 const form = document.getElementById('form-inscription');
 const bouton = document.getElementById('bouton-inscription');
 
-// État simple : true/false pour chaque champ
+
 let champValides = {
     nom: false,
     prenom: false, 
@@ -124,7 +124,7 @@ function activerBoutonSiToutValide() {
     bouton.disabled = !toutEstValide;
 }
 
-// Écouteurs d'événements temps réel 
+
 
 document.getElementById('nom').addEventListener('blur', (e) => {
     validerChamp('nom', e.target.value.trim());
