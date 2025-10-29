@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questionnaire</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+         <header>
+        <nav class="card-panel purple accent-4">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <form>
+                <div >
+                    <label>Civilité :</label>
+                    <div >
+                        <label>
+                            <input type="radio" name="civilite" value="f"> Féminin
+                        </label>
+                        <label>
+                            <input type="radio" name="civilite" value="m"> Masculin
+                        </label>
+                        <label>
+                            <input type="radio" name="civilite" value="autre"> Autre
+                        </label>
+                    </div>
+                </div>
+                
+                <div >
+                    <label for="prenom">Prénom :</label>
+                    <input type="text"  name="prenom" placeholder="Entrez votre prénom">
+                </div>
+                
+               
+                <div >
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" placeholder="Entrez votre nom">
+                </div>
+                
+                
+                <div >
+                    <label for="adresse">Adresse :</label>
+                    <input type="text"  name="adresse" placeholder="Entrez votre adresse">
+                </div>
+                
+               
+                <div >
+                    <label for="email">Adresse Email :</label>
+                    <input type="email"  name="email" placeholder="exemple@email.com">
+                </div>
+                
+                
+                <div >
+                    <label for="mot de passe">Mot de passe :</label>
+                    <input type="password"  name="mot de passe" placeholder="Entrez votre mot de passe">
+                </div>
+                
+                
+                <div >
+                    <label for=" passe-confirmation">Confirmer le mot de passe :</label>
+                    <input type="password"  name="passe-confirmation" placeholder="Confirmez votre mot de passe">
+                </div>
+                
+                
+                <div >
+                    <label>Vos passions :</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="passions" value="informatique"> Informatique
+                        </label>
+                        <label>
+                            <input type="checkbox" name="passions" value="voyages"> Voyages
+                        </label>
+                        <label>
+                            <input type="checkbox" name="passions" value="sport"> Sport
+                        </label>
+                        <label>
+                            <input type="checkbox" name="passions" value="lecture"> Lecture
+                        </label>
+                    </div>
+                </div>
+                
+               
+                <button type="submit">Créer mon compte</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <nav >
+             <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Inscription</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="index.html">Rechercher</a></li>
+        </ul>
+        </nav>
+    </footer>
+        
+    </body>
+    </html>
