@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questionnaire</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+         <header class="bg-violet-700  ">
+        <nav> 
+            <ul class="text-lime-400  flex gap-x-4 justify-center">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+         <section class="w-full max-w-md">
+        <form class="bg-white shadow-xl rounded-2xl px-8 pt-6 pb-8 mb-4 border-2 border-indigo-100">
+            
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Civilité :</label>
+                <div class="flex space-x-6">
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="civilite" value="f" class="form-radio text-indigo-600 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Féminin</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="civilite" value="m" class="form-radio text-indigo-600 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Masculin</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="civilite" value="autre" class="form-radio text-indigo-600 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Autre</span>
+                    </label>
+                </div>
+            </div>
+
+            
+            <div class="mb-6 relative">
+                <label for="prenom" class="block text-gray-700 text-sm font-bold mb-2">Prénom :</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"
+                           class="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-colors duration-300">
+                </div>
+            </div>
+
+            
+            <div class="mb-6 relative">
+                <label for="nom" class="block text-gray-700 text-sm font-bold mb-2">Nom :</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
+                        <i class="fas fa-user-tag"></i>
+                    </span>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom"
+                           class="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-colors duration-300">
+                </div>
+            </div>
+
+            
+            <div class="mb-6 relative">
+                <label for="adresse" class="block text-gray-700 text-sm font-bold mb-2">Adresse :</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse"
+                           class="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-colors duration-300">
+                </div>
+            </div>
+
+            
+            <div class="mb-6 relative">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Adresse Email :</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com"
+                           class="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-colors duration-300">
+                </div>
+            </div>
+
+            
+            <div class="mb-6 relative">
+                <label for="mot_de_passe" class="block text-gray-700 text-sm font-bold mb-2">Mot de passe :</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Entrez votre mot de passe"
+                           class="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-colors duration-300">
+                </div>
+            </div>
+
+            
+            <div class="mb-6 relative">
+                <label for="passe_confirmation" class="block text-gray-700 text-sm font-bold mb-2">Confirmer mot de passe :</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="password" id="passe_confirmation" name="passe_confirmation" placeholder="Confirmer votre mot de passe"
+                           class="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-colors duration-300">
+                </div>
+            </div>
+
+           
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Vos passions :</label>
+                <div class="grid grid-cols-2 gap-4">
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" name="passions" value="informatique" class="form-checkbox text-indigo-600 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Informatique</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" name="passions" value="voyages" class="form-checkbox text-indigo-600 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Voyages</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" name="passions" value="sport" class="form-checkbox text-indigo-600 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Sport</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" name="passions" value="lecture" class="form-checkbox text-indigo-600 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Lecture</span>
+                    </label>
+                </div>
+            </div>
+
+            
+            <div class="flex items-center justify-center">
+                <button type="submit" class="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    Créer mon compte
+                </button>
+            </div>
+        </form>
+    </section>
+    </main>
+    
+    <footer>
+        <nav class="bg-amber-500">
+            <ul class="text-lime-400  flex gap-x-4 justify-center">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Inscription</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="index.html">Rechercher</a></li>
+        </ul>
+        </nav>
+    </footer>
+        
+    </body>
+    </html>
