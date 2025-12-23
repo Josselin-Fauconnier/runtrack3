@@ -1,114 +1,153 @@
 <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Questionnaire</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    </head>
-    <body>
-         <header>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
         <nav class="card-panel purple accent-4">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html">Inscription</a></li>
-                <li><a href="index.html">Connexion</a></li>
-                <li><a href="index.html">Rechercher</a></li>
-            </ul>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
-    <main>
+    <main class="container">
         <section>
-            <form>
-                <div >
-                    <label>Civilité :</label>
-                    <div >
-                        <label>
-                            <input type="radio" name="civilite" value="f"> Féminin
-                        </label>
-                        <label>
-                            <input type="radio" name="civilite" value="m"> Masculin
-                        </label>
-                        <label>
-                            <input type="radio" name="civilite" value="autre"> Autre
-                        </label>
+            <form class="col s12">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>Civilité :</h5>
+                        <p>
+                            <label>
+                                <input name="civilite" type="radio" value="f" />
+                                <span>Féminin</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="civilite" type="radio" value="m" />
+                                <span>Masculin</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="civilite" type="radio" value="autre" />
+                                <span>Autre</span>
+                            </label>
+                        </p>
                     </div>
                 </div>
                 
-                <div >
-                    <label for="prenom" >Prénom :</label>
-                    <input type="text"  name="prenom" placeholder="Entrez votre prénom">
-                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="prenom" type="text" class="validate" name="prenom">
+                        <label for="prenom">Prénom</label>
+                    </div>
                 
-               
-                <div >
-                    <label for="nom">Nom :</label>
-                    <input type="text" name="nom" placeholder="Entrez votre nom">
-                </div>
-                
-                
-                <div >
-                    <label for="adresse">Adresse :</label>
-                    <input type="text"  name="adresse" placeholder="Entrez votre adresse">
-                </div>
-                
-               
-                <div >
-                    <label for="email">Adresse Email :</label>
-                    <input type="email"  name="email" placeholder="exemple@email.com">
-                </div>
-                
-                
-                <div >
-                    <label for="mot de passe">Mot de passe :</label>
-                    <input type="password"  name="mot de passe" placeholder="Entrez votre mot de passe">
-                </div>
-                
-                
-                <div >
-                    <label for=" passe-confirmation">Confirmer le mot de passe :</label>
-                    <input type="password"  name="passe-confirmation" placeholder="Confirmez votre mot de passe">
-                </div>
-                
-                
-                <div >
-                    <label>Vos passions :</label>
-                    <div class="checkbox-group">
-                        <label>
-                            <input type="checkbox" name="passions" value="informatique"> Informatique
-                        </label>
-                        <label>
-                            <input type="checkbox" name="passions" value="voyages"> Voyages
-                        </label>
-                        <label>
-                            <input type="checkbox" name="passions" value="sport"> Sport
-                        </label>
-                        <label>
-                            <input type="checkbox" name="passions" value="lecture"> Lecture
-                        </label>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="nom" type="text" class="validate" name="nom">
+                        <label for="nom">Nom</label>
                     </div>
                 </div>
                 
-               
-                <button type="submit"  class="btn-floating btn-large pulse" >Créer </button>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">home</i>
+                        <input id="adresse" type="text" class="validate" name="adresse">
+                        <label for="adresse">Adresse</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" name="email">
+                        <label for="email">Adresse Email</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="mot_de_passe" type="password" class="validate" name="mot_de_passe">
+                        <label for="mot_de_passe">Mot de passe</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock_outline</i>
+                        <input id="passe_confirmation" type="password" class="validate" name="passe_confirmation">
+                        <label for="passe_confirmation">Confirmer le mot de passe</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col s12">
+                        <h5>Vos passions :</h5>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="passions" value="informatique" />
+                                <span>Informatique</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="passions" value="voyages" />
+                                <span>Voyages</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="passions" value="sport" />
+                                <span>Sport</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="passions" value="lecture" />
+                                <span>Lecture</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn-floating btn-large pulse purple accent-4">
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
+                </div>
             </form>
         </section>
     </main>
     
     <footer>
-        <nav class="card-panel green darken-4" >
-             <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="index.html">Inscription</a></li>
-            <li><a href="index.html">Connexion</a></li>
-            <li><a href="index.html">Rechercher</a></li>
-        </ul>
-
+        <nav class="card-panel green darken-4">
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
         </nav>
-        
-        
     </footer>
-        
-    </body>
-    </html>
+    
+   
+</body>
+</html>

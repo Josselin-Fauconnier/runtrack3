@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo librairie</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+   
+    <nav class="light-blue darken-2">
+        <div class="nav-wrapper container">
+            
+            <a href="#" class="brand-logo">
+                <i class="material-icons left">menu_book</i>Librairie
+            </a>
+            
+           
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            
+            
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#"><i class="material-icons left">home</i>Accueil</a></li>
+                <li><a href="#"><i class="material-icons left">fiber_new</i>Nouveautés</a></li>
+                <li><a href="#"><i class="material-icons left">category</i>Catégories</a></li>
+                <li><a href="#"><i class="material-icons left">shopping_cart</i>Panier</a></li>
+                <li><a href="#" class="btn white light-blue-text text-darken-2">Connexion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#"><i class="material-icons">home</i>Accueil</a></li>
+        <li><a href="#"><i class="material-icons">fiber_new</i>Nouveautés</a></li>
+        <li><a href="#"><i class="material-icons">category</i>Catégories</a></li>
+        <li><a href="#"><i class="material-icons">shopping_cart</i>Panier</a></li>
+        <li><a href="#" class="btn light-blue darken-2 white-text">Connexion</a></li>
+    </ul>
+
+   
+    <div class="container">
+       
+        <div class="section">
+            <div class="row">
+                <div class="col s12">
+                   
+                    <div class="card horizontal hoverable">
+                        <div class="card-image">
+                            <img src="img/racaille_de_bibliotheque_T4.webp" alt="Livre vedette">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title">Découvrez notre sélection du mois</span>
+                                <p class="flow-text">Des milliers de livres à explorer pour tous les goûts.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="btn-large waves-effect waves-light light-blue">
+                                    <i class="material-icons left">explore</i>Explorer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="divider"></div>
+        <div class="section">
+            <h4 class="light-blue-text text-darken-2 center-align">Nos Nouveautés</h4>
+        </div>
+
+        
+        <div class="row">
+          
+            <div class="col s12 m4">
+                <div class="card small hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/8-2-secondes.jpg" alt="Livre 1">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            Roman Policier
+                            <i class="material-icons right">more_vert</i>
+                        </span>
+                        <p><a href="#" class="light-blue-text">22,90 €</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
+                            Roman Policier<i class="material-icons right">close</i>
+                        </span>
+                        <p>Une intrigue captivante qui vous tiendra en haleine jusqu'à la dernière page.</p>
+                        <a href="#" class="btn-flat waves-effect waves-light">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col s12 m8">
+                <div class="card medium horizontal">
+                    <div class="card-image">
+                        <img src="img/fantasy.webp" alt="Collection">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <span class="card-title"> Science-Fiction & fantasy </span>
+                            <p>Explorez des mondes fantastiques avec notre collection complète.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="btn-flat waves-effect waves-teal">Découvrir</a>
+                            <a href="#" class="btn-flat waves-effect waves-teal">Ajouter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="row">
+           
+            <div class="col s12">
+                <div class="card large">
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a class="active" href="#sciences">Science</a></li>
+                            <li class="tab"><a href="#bd">BD</a></li>
+                            <li class="tab"><a href="#jeunesse">Jeunesse</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content grey lighten-4">
+                        <div id="sciences">
+                            <h5>Sélection Science</h5>
+                          <p>Découvrez nos livres sur les sciences.</p>
+                        </div>
+                        <div id="bd">
+                            <h5>Sélection BD</h5>
+                            <p>Découvrez nos meilleures ventes en bande dessinée.</p>
+                        </div>
+                        <div id="jeunesse">
+                            <h5>Sélection Jeunesse</h5>
+                            <p>Des livres adaptés pour tous les âges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card-panel teal lighten-2 white-text">
+                    <h5><i class="material-icons left">local_shipping</i>Livraison gratuite</h5>
+                    <p>À partir de 25€ d'achat</p>
+                </div>
+            </div>
+         
+        </div>
+
+    
+   
+</body>
+</html>
