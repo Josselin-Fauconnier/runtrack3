@@ -1,0 +1,36 @@
+  #shuffle {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            min-height: 150px;
+            border: 2px dashed #820580;
+            margin: 10px;
+            padding: 10px;
+            background-color: #626060;
+        }
+
+        .container img {
+            width: 100px;
+            height: auto;
+            margin: 5px;
+            cursor: grab;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
